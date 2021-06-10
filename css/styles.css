@@ -11,5 +11,5 @@
 
 h1{
     font-family: var(--fuentePrincipal);
-    color: var(--primarioOscuro);
+    color: var(--secundario);
 }
