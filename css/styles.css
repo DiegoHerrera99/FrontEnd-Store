@@ -66,3 +66,56 @@ h3{
     max-width: 120rem;
     margin: 0 auto;
 }
+
+/*--------------------- HEADER ---------------------*/
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo{
+    margin: 3rem 0rem;
+}
+
+/*---------------------- FOOTER --------------------*/
+
+.footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0rem;
+    margin-top: 2rem;
+}
+
+.footer__texto{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 2.2rem;
+}
+
+/*-------------------- NAVEGACION ------------------*/
+
+.navegacion{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    /*gap: 2rem; /* Esta forma es nueva y todavia no 
+    tiene soporte en safari, la manera "viejita" y con
+    soporte es utilizando margin*/
+}
+
+.navegacion__enlace{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+.navegacion__enlace:last-of-type{
+    margin-right: 0rem;
+}
+
+.navegacion__enlace:hover,
+.navegacion__enlace--activo{
+    color: var(--secundario);
+}
