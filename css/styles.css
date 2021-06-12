@@ -62,10 +62,12 @@ h3{
     font-size: 2.4rem;
 }
 
+
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
 }
+
 
 /*--------------------- HEADER ---------------------*/
 
@@ -237,7 +239,7 @@ h3{
 
 .camisa{
     display: grid;
-    margin: auto .5rem;
+    margin: auto 2rem;
 }
 
 @media (min-width: 768px){
@@ -261,12 +263,18 @@ h3{
     background-color: var(--primario);
     color: var(--blanco);
 
-    font-size: 2rem;
+    font-size: auto;
     font-family: Arial, Helvetica, sans-serif;
 
     padding: 1rem;
 
     appearance: none;
+}
+
+@media (min-width: 768px){
+   .formulario__campo{
+       font-size: 2rem;
+   }
 }
 
 .formulario__submit{
@@ -279,6 +287,8 @@ h3{
     transition: background-color .3s ease;
 
     grid-column: 1 / 3;
+
+    width: 100%;
 }
 
 .formulario__submit:hover{
